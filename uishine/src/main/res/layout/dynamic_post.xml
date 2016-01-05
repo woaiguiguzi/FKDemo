@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/container_bg">
+
+    <LinearLayout
+        android:id="@+id/post_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--标题 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff"
+            android:gravity="top">
+            <ImageView
+                android:id="@+id/post_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:src="@mipmap/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="发布动态"
+                android:textColor="@color/colorFont"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/post_send"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="发布"
+                android:textColor="#15aeed"
+                android:textSize="20dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorFont1" />
+        <EditText
+            android:id="@+id/post_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:hint="说点什么吧..."
+            android:maxLength="140"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/post_text_remain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="0/140"
+            android:textColor="@color/colorFont1"
+            android:textSize="12dp" />
+
+        <HorizontalScrollView
+            android:id="@+id/post_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/post_pic_container"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+                <com.kwt.uishine.widget.FilterImageView
+                    android:id="@+id/post_add_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/post_add_pic"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:id="@+id/post_pic_remain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:text="0/9"
+            android:textColor="@color/colorFont1"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorFont1" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pagerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <com.kwt.uishine.widget.AlbumViewPager
+            android:id="@+id/albumviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/album_item_bg" />
+    <!-- include 放在 AlbumViewPager下，（因AlbumViewPagerheight="match_parent"）-->
+        <include
+            android:id="@+id/album_item_header_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            layout="@layout/album_item_header_bar" />
+    </FrameLayout>
+
+</LinearLayout>

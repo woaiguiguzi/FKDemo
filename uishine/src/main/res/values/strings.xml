@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">UIShine</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_controlhome">ControlhomeActivity</string>
+    <string name="title_activity_forgot">ForgotActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment_list">FragmentListActivity</string>
+    <string name="title_activity_senior_fragmnet">SeniorFragmnetActivity</string>
+    <string name="title_activity_tabbar_list">TabbarListActivity</string>
+    <array name="tabbar_name">
+        <item>SinaTabbar</item>
+        <item>SimpleTabbar</item>
+    </array>
+    <string name="title_activity_sina_tabbar">SinaTabbarActivity</string>
+    <string name="title_activity_sina_first">SinaFirstActivity</string>
+    <string name="title_activity_sina_second">SinaSecondActivity</string>
+    <string name="title_activity_simple_tabhost">SimpleTabhostActivity</string>
+    <string name="title_activity_wx_sliding">WxSlidingActivity</string>
+    <string name="title_activity_menu_right">MenuRightActivity</string>
+    <string name="title_activity_siding_tab1">SidingTab1Activity</string>
+    <string name="title_activity_siding_tab2">SidingTab2Activity</string>
+    <string name="title_activity_siding_tab3">SidingTab3Activity</string>
+    <string name="title_activity_sliding_list">SlidingListActivity</string>
+    <string name="title_activity_qqmenu">QQMenuActivity</string>
+    <string name="title_activity_action_home">ActionHome</string>
+    <string name="title_activity_action_list">ActionList</string>
+    <string name="title_activity_dialog_list">DialogList</string>
+    <string name="title_activity_alert_dialog_demo">AlertDialogDemo</string>
+    <string name="title_activity_pop_progress_dialog">PopProgressDialog</string>
+    <string name="title_activity_menu_demo">menuDemo</string>
+    <string name="title_activity_gallery_list">GalleryList</string>
+    <string name="title_activity_simple_gallery">simpleGallery</string>
+    <string name="title_activity_image_switcher_demo">ImageSwitcherDemo</string>
+    <string name="title_activity_horizontal_scroll_demo">HorizontalScrollDemo</string>
+    <string name="title_activity_simple_horizontal_scroll">SimpleHorizontalScroll</string>
+    <string name="title_activity_photo_get">PhotoGet</string>
+    <string name="title_activity_dynamic_post">DynamicPost</string>
+    <string name="title_activity_local_album">LocalAlbum</string>
+    <string name="title_activity_local_album_detail">LocalAlbumDetail</string>
+    <string name="title_activity_simple_share">SimpleShare</string>
+    <string name="share">图文分享</string>
+</resources>

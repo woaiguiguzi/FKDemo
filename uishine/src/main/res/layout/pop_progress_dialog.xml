@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/btnPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop弹窗"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnProgressCust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义ProgressDialog"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btnProgressCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义环形Loading"
+        android:textSize="20dp"/>
+    <ProgressBar
+        android:id="@+id/goLoad"
+        android:layout_margin="2dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/load_progressbar_style"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        />
+</LinearLayout>
